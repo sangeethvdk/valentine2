@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Happy Valentine's Day ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<audio id="bgMusic" loop>
+    <source src="music.mp3" type="audio/mp3">
+</audio>
+
+<div class="hearts"></div>
+<div id="sparkle-container"></div>
+
+<!-- PAGE 1 -->
+<section id="page1" class="page active">
+    <img src="https://picsum.photos/1600/900" class="bg-image">
+
+    <div class="center-content">
+        <h1 class="neon">Happy Valentine's Day</h1>
+        <h2 class="handwriting reveal">Reethika</h2>
+        <h3 class="handwriting">Bobby</h3>
+        <p class="small-text">It's for you</p>
+        <button class="btn" onclick="startExperience()">Click Here to Go 💌</button>
+    </div>
+</section>
+
+<!-- PAGE 2 -->
+<section id="page2" class="page">
+    <h1 class="neon small">Happy Valentine's Day</h1>
+    <h2 class="handwriting small-hand">Bobby</h2>
+    <p id="typeText" class="love-text"></p>
+    <button class="btn" onclick="nextPage(3)">Continue Our Journey ❤️</button>
+</section>
+
+<!-- PAGE 3 -->
+<section id="page3" class="page">
+    <h1 class="journey">Three Years of Our Journey</h1>
+
+    <div class="counter">
+        Together for: <span id="loveCounter"></span>
+    </div>
+
+    <div class="gallery">
+        <img src="https://picsum.photos/300?1" onclick="openModal(this, 'The day I realized you are my forever.')">
+        <img src="https://picsum.photos/300?2" onclick="openModal(this, 'Your smile is my favorite place.')">
+        <img src="https://picsum.photos/300?3" onclick="openModal(this, 'Every memory with you is magic.')">
+        <img src="https://picsum.photos/300?4" onclick="openModal(this, 'Holding your hand feels like home.')">
+        <img src="https://picsum.photos/300?5" onclick="openModal(this, 'Three years, countless memories.')">
+        <img src="https://picsum.photos/300?6" onclick="openModal(this, 'You are my heart’s safest place.')">
+        <img src="https://picsum.photos/300?7" onclick="openModal(this, 'With you, every day feels special.')">
+        <img src="https://picsum.photos/300?8" onclick="openModal(this, 'Our story is my favorite story.')">
+        <img src="https://picsum.photos/300?9" onclick="openModal(this, 'Forever starts with you.')">
+        <img src="https://picsum.photos/300?10" onclick="openModal(this, 'Still choosing you every single day.')">
+    </div>
+
+    <p class="final-text">
+        No matter where life takes us, my heart will always belong to you.  
+        Forever your Bobby ❤️
+    </p>
+</section>
+
+<div id="modal" class="modal">
+    <span class="close" onclick="closeModal()">×</span>
+    <img id="modalImg">
+    <p id="caption"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
