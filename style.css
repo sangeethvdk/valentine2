@@ -1,0 +1,46 @@
+/* Reveal animation */
+.reveal {
+    opacity: 0;
+    animation: fadeReveal 3s ease forwards;
+}
+
+@keyframes fadeReveal {
+    to {opacity: 1;}
+}
+
+/* Love Counter */
+.counter {
+    margin: 20px;
+    font-size: 22px;
+    color: #ff4da6;
+}
+
+/* Sparkle */
+#sparkle-container span {
+    position: fixed;
+    width: 4px;
+    height: 4px;
+    background: white;
+    border-radius: 50%;
+    animation: sparkle 2s linear infinite;
+}
+
+@keyframes sparkle {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+/* Cursor glitter */
+.cursor-glitter {
+    position: fixed;
+    width: 6px;
+    height: 6px;
+    background: pink;
+    border-radius: 50%;
+    pointer-events: none;
+    animation: fadeOut 1s forwards;
+}
+
+@keyframes fadeOut {
+    to {opacity: 0; transform: scale(2);}
+}
